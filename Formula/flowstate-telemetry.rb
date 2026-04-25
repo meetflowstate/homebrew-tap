@@ -5,21 +5,21 @@
 class FlowstateTelemetry < Formula
   desc "Configure AI coding tools to emit telemetry to Flowstate"
   homepage "https://www.flowstate.inc"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.1.0/flowstate-telemetry_1.1.0_darwin_amd64.tar.gz"
-      sha256 "8296d83fda710d3ff491714d4823decbdfa057bd7f8ecb681684a05c7d343a09"
+      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.2.0/flowstate-telemetry_1.2.0_darwin_amd64.tar.gz"
+      sha256 "d8ea80917f8292618fcf7b116342973e5d487f356448d5a057a2a2fcac33b76c"
 
       define_method(:install) do
         bin.install "flowstate-telemetry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.1.0/flowstate-telemetry_1.1.0_darwin_arm64.tar.gz"
-      sha256 "ee371628a0d7b41b81e053f599d6b92ff94db20680fe3e7b962609281f31c9f5"
+      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.2.0/flowstate-telemetry_1.2.0_darwin_arm64.tar.gz"
+      sha256 "c4cdd38873bc2cc73134346e3d0a7059c0a06290b6f948d44fdd230af15b11b3"
 
       define_method(:install) do
         bin.install "flowstate-telemetry"
@@ -29,15 +29,15 @@ class FlowstateTelemetry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.1.0/flowstate-telemetry_1.1.0_linux_amd64.tar.gz"
-      sha256 "264746d758e6e7fb43e03e4da75cfcd3866a21615db43ddbd6c93e11c85f87a4"
+      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.2.0/flowstate-telemetry_1.2.0_linux_amd64.tar.gz"
+      sha256 "a5ddef746a268b4b11aae390d30a2fabd34c51306a5f47d0febe0184ae79bc1a"
       define_method(:install) do
         bin.install "flowstate-telemetry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.1.0/flowstate-telemetry_1.1.0_linux_arm64.tar.gz"
-      sha256 "a9978d7a566a5e557d06092b57ee3b69bc0502182002026d79a1cba55504cf54"
+      url "https://github.com/meetflowstate/flowstate-telemetry/releases/download/v1.2.0/flowstate-telemetry_1.2.0_linux_arm64.tar.gz"
+      sha256 "eb483b850069dffba37cac45c8b627155cf3404f2c173ac09345c0c0e4aa70a3"
       define_method(:install) do
         bin.install "flowstate-telemetry"
       end
